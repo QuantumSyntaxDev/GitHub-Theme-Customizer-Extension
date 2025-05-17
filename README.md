@@ -30,7 +30,7 @@ Feel free to fork the repository and submit pull requests. If you have suggestio
 
 ## Author
 
-[Cloudverge](https://t.me/QuantumSyntaxDev)
+[QuantumSyntaxDev](https://t.me/QuantumSyntaxDev)
 
 ---
 
