@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Theme Customizer",
+  "version": "1.0",
+  "description": "Customize the appearance of GitHub by changing styles for various elements like buttons, backgrounds, text colors, and more. Author: @Cloudverge (https://t.me/Cloudverge)",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://github.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["DarkTheme.css", "LightTheme.css", "CustomStyles.css"],
+      "matches": ["https://github.com/*"]
+    },
+    {
+      "resources": ["DarkDefault.css", "LightDefault.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
